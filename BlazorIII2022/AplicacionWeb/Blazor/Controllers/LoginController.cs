@@ -32,7 +32,7 @@ namespace Blazor.Controllers
 
                 if (usuarioValido)
                 {
-                    Usuario user = await _usuarioRepositorio.GetPorCodigo(login.Usuario);
+                    Usuario user = await _usuarioRepositorio.GetPorCodigo(login.Codigo);
 
                     if (user.EstaActivo)
                     {
